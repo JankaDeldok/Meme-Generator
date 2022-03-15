@@ -1,6 +1,6 @@
 # frontend part of the Meme Generator of Team 085
 
-Members: Janina Ehe, Janka Hartmann, Anil Balkan, Pauline Sailer
+Members: Janina, Janka, Anil, Pauline
 
 To run this project run:
 
