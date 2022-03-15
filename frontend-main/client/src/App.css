@@ -1,0 +1,315 @@
+/*
+Hintergrund:
+#1f1e20
+Text (hell und dunkelgrau):
+#c4c2c6
+#686868
+___________________
+Schwarz (Grafikhintergrund):
+#000000
+Türkis, Lila (Akzent):
+#00e5c4
+#6800e5
+___________________
+Farbakzente Gruppen:
+Türkis, Blau, Dunkelblau:
+#00e5c4
+#003ce5
+#172548
+Orange, Rosa:
+#ffd871
+#ff71fd
+Blau, Dunkelblau, Weiß:
+#003ce5
+#172548
+#ffffff
+*/
+
+/* Styling for all pages */
+body{
+    background-color: #1f1e20 !important;
+    color: #c4c2c6;
+}
+body .home .row a {
+    background-color: black;
+}
+body .home .row a div:hover {
+    background-color: #ffffff1A;
+    opacity: 0.4;
+}
+.nav-link{
+    color: #686868;
+}
+.nav-link:hover, .nav-link:focus{
+    color: #00e5c4;
+}
+.turquoise {
+    color: #00e5c4;
+}
+.blue {
+    color: #003ce5;
+}
+.turquoise svg {
+    color: #00e5c4;
+}
+.blue svg {
+    color: #003ce5;
+}
+.fs-little{
+    font-size: 0.9rem;
+}
+
+/*For ICONs*/
+.right{
+    height: 3rem;
+    width: auto;
+    float: right;
+}
+/* Additional Colors, styling Icon links (on hover) */
+.dark {
+    color: #686868;
+    border-color: #686868!important;
+}
+.dark a:hover {
+    color: #00e5c4;
+    border-color: #00e5c4!important;
+    text-decoration: underline;
+
+    transition: color 0.2s ease-in;
+    -webkit-transition: color 0.2s ease-in;
+    -moz-transition: color 0.2s ease-in;
+}
+.dark a {
+    color: #686868;
+    border-color: #686868!important;
+    text-decoration: none!important;
+}
+
+.light_blue{
+    color: #00e5c4;
+    border-color: #00e5c4!important;
+}
+
+
+/* Styling scrollbars */
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #68686899;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #00e5c499;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00e5c4e6;
+}
+
+/* Styling scrollbar of Browser */
+html> ::-webkit-scrollbar-thumb {
+    background: #68686844;
+    border-radius: 5px;
+}
+html> ::-webkit-scrollbar-thumb:hover {
+    background: #1f1e20;
+}
+html> ::-webkit-scrollbar-track {
+    background: #1f1e20;
+}
+
+/* Styling of the home page */
+.home div {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.home .row .filler{
+    height: 100%;
+    width: 100%;
+}
+.home .row>div{
+    background-color: black;
+    background-clip: content-box;
+}
+.home #account{
+    background-image: url("./assets/home/account.svg");
+}
+.home #api{
+    background-image: url("./assets/home/apidoku.svg");
+}
+.home #editor{
+    height: 25vh;
+    background-image: url("./assets/home/createMemes.svg");
+}
+.home #singleView{
+    height: 12vh;
+    background-image: url("./assets/home/singleMemes.svg");
+}
+.home #overview{
+    height: 40vh;
+    background-image: url("assets/home/viewMemes.svg");
+}
+
+/*account and privacy*/
+.form-control, .form-control:focus{
+  background-color: #1f1e20;
+    color: #c4c2c6;
+    border: 1px solid #c4c2c6;
+}
+.form-text{
+    color: #686868 !important;
+}
+.account form {
+    max-width: 700px;
+}
+
+.modal-content {
+    background-color: #686868;
+}
+.modal-content label{
+    padding: 20px 19px;
+}
+
+/* editor and editor page 2*/
+
+/* sets the sizes of the upload icons*/
+.upload svg{
+    height: 3rem;
+    width: auto;
+    margin-bottom: 1rem;
+}
+.draggContainer{
+    position: relative;
+}
+.draggContainer img{
+    padding-top: 4rem; /* so textarea is on the image*/
+    width: 100%;
+}
+.draggContainer .react-draggable .cursor{
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-align: center;
+}
+.draggContainer .react-draggable{
+    position: absolute;
+    width: fit-content;
+    font-size: 2.0rem;
+}
+.draggContainer .react-draggable textarea{
+    font-size: 5rem;
+    color: white;
+    resize: both;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+    width: 400px;
+}
+.draggContainer .react-draggable textarea:focus{
+    outline: 3px dashed #00e5c4;
+}
+.textstroke{
+    -webkit-text-stroke: 1px black;
+}
+
+    /* sets the icons in editor 2, on the right
+     fixed icon size for medium screens, but is bad for sm*/
+.menu svg{
+    height: 8vw;
+    min-height: 8rem;
+    width: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+@media only screen and (min-width: 1400px){
+    .menu-left svg{
+        min-height: 1.8rem;
+        width: auto;
+    }
+}
+.menu-left button{
+    width: 100%; /* button as wide as column */
+}
+
+/* Scrollable container for templates */
+.templates>div{
+    height: 45vh;
+    overflow: auto;
+}
+/* Transition on hover */
+.templates .row:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.templates .row{
+    transition: background-color 200ms;
+}
+
+/** Styling forms (in Overview) **/
+.form-select, .input-group-text, .form-control{
+    background-color: #1f1e20;
+    color: #686868;
+}
+.input-group-text {
+    border: 0;
+}
+
+/* Styling Overview and Single View */
+.overview button, .singleView .dark button, .account button {
+    border: none;
+    background-color: #1f1e20;
+    color: #686868;
+}
+.overview button:hover, .singleView .dark button:hover {
+    color: #00e5c4;
+}
+.overview svg {
+    min-height: 1.5rem;
+    width: auto;
+}
+.overview button:hover{
+    border: none !important;
+    background-color: #1f1e20;
+    color: #6800e5;
+}
+.overview button.light_blue{
+    color: #00e5c4;
+}
+.overview.memes {
+    max-height: 70vh;
+    overflow: auto;
+}
+/* Styling the charts
+ */
+.charts rect{
+    opacity: 0.7;
+    transition: opacity 200ms;
+}
+.charts rect:hover{
+    opacity: 1;
+}
+
+/**
+Css classes for styling the texts in the meme editor (meme-text)
+Do NOT change
+
+Used from boostrap: .collapse
+ */
+#meme .saving strong.cursor{
+    color: rgba(0,0,0,0);
+}
+#meme .saving textarea {
+    overflow: hidden;
+    resize: none;
+}
+canvas {
+    display: inline-block;
+    position: absolute;
+}
+
+/* Editor styling */
+.editor .input-group-text {
+    width: 100%;
+}
+input.color{
+    margin-top: 2rem;
+    width: 100%;
+}
