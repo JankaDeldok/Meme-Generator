@@ -9,7 +9,7 @@ const cors = require("cors");
 
 // Connect to mongoDB
 mongoose
-    .connect("mongodb+srv://ommuser:ommuser@testclusteromm.l2yye.mongodb.net/test")
+    .connect("") // enter link to your mongoDB here
     .then(() => {
         const app = express();
         app.set("view engine", "ejs");
